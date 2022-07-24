@@ -1,0 +1,149 @@
+.header {
+  height: 88px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #d9fff5;
+  padding: 24px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__divider {
+    height: 32px;
+    width: 2px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background: #ff3e79 no-repeat center;
+  }
+
+  &__description {
+    display: none;
+  }
+
+  .caption {
+    display: none;
+  }
+
+  .call {
+    background-image: url('./assets/img/call.svg');
+    margin-left: auto;
+  }
+
+  .chat {
+    background-image: url('./assets/img/chat.svg');
+  }
+
+  .profile {
+    background-image: url('./assets/img/profile.svg');
+  }
+
+  .burger {
+    background-image: url('./assets/img/burger.svg');
+  }
+
+  .repair {
+    background-image: url('./assets/img/repair.svg');
+  }
+
+  .question {
+    background-image: url('./assets/img/search.svg');
+  }
+
+  .call, .chat, .profile, .left {
+    display: none;
+  }
+
+  .right {
+    margin-left: auto;
+  }
+
+}
+
+//=================================== Tablet ===================================//
+
+@media (min-width: 768px) {
+
+  .header {
+    gap: 20px;
+    padding: 24px;
+
+    &__description {
+      display: none;
+    }
+
+    .caption {
+      display: none;
+    }
+
+    .right{
+      margin-left: 0;
+    }
+
+    .call, .chat, .profile, .left {
+      display: block;
+    }
+
+  }
+}
+
+//=================================== Desktop ===================================//
+
+@media (min-width: 1440px) {
+
+  .header {
+    background-color: #F8F8F8;
+    border-bottom: 0;
+    padding: 42px 35px 9px 30px;
+    gap: 0;
+
+    &__button {
+      margin-left: 9px;
+    }
+
+    &__description {
+      display: block;
+      font-size: 16px;
+    }
+
+    .caption {
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      margin: 0;
+      font-family: TTLakes-Bold, sans-serif;
+
+
+      &::before{
+        content: "";
+        background-color: #41F6D7;
+        height: 40px;
+        width: 3px;
+        border-radius: 2px;
+        transform: translateX(-28px);
+      }
+    }
+
+    .request {
+      margin-left: auto;
+    }
+
+    .call, .chat, .profile, .left, .header__logo, .right, .burger {
+        display: none;
+    }
+
+    .repair {
+
+      margin-right: 32px;
+    }
+
+
+  }
+}

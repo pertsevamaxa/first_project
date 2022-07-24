@@ -1,0 +1,25 @@
+.photoContainer {
+  padding-top: 16px;
+  .photo {
+    width: 320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .photoContainer {
+    padding: 0;
+    margin-left: auto;
+    .photo {
+      width: 360px;
+      border-radius: 6px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .photoContainer {
+    .photo {
+      width: 530px;
+    }
+  }
+}

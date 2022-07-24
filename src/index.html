@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+<div class='menu'>
+  <div class='menu__top'>
+    <button class='menu__button exit'></button>
+    <img src='../src/assets/img/logo.png' alt='logo' class='menu__logo'>
+    <button class='menu__button search'></button>
+  </div>
+  <ul class='menu__services'>
+    <li class='servariable active'>Ремонт техники</li>
+    <li class='servariable'>Услуги и сервисы</li>
+    <li class='servariable'>Корпоративным клиентам</li>
+    <li class='servariable'>Продавцам техники</li>
+    <li class='servariable'>Партнерам</li>
+    <li class='servariable'>Производителям</li>
+    <li class='servariable'>Наши сервисные центры</li>
+    <li class='servariable'>Контакты</li>
+  </ul>
+  <div class='menu__connection'>
+    <div class='contacts'>
+      <button class='menu__button call'></button>
+      <button class='menu__button chat'></button>
+      <button class='menu__button profile'></button>
+    </div>
+    <span class='mail'>mail@cps.com</span>
+    <span class='phone'>8 800 890 8900</span>
+    <div class='language'>
+      <span class='lang'>RU</span>
+      <span class='lang'>EN</span>
+      <span class='lang'>CH</span>
+    </div>
+  </div>
+</div>
+
+<div class='wrapper'>
+
+  <header class='header'>
+    <button class='header__button burger'></button>
+    <span class='header__divider left'></span>
+    <img src='../src/assets/img/logo.png' alt='logo' class='header__logo'>
+    <button class='header__button call'></button>
+    <button class='header__button chat'></button>
+    <button class='header__button profile'></button>
+    <span class='header__divider right'></span>
+    <h1 class='caption'>Услуги и сервисы</h1>
+    <span class='header__description request'>Оставить заявку</span>
+    <button class='header__button repair'></button>
+    <span class='header__description '>Статус ремонта</span>
+    <button class='header__button question'></button>
+  </header>
+
+  <div class='main'>
+
+    <div class='captionMobile'>
+      Услуги и сервисы
+    </div>
+
+    <div class='slideMenu'>
+      <button class='slideMenu__button'>Ремонтруемые бренды</button>
+      <button class='slideMenu__button'>Дополнительные цены</button>
+      <button class='slideMenu__button'>Цены на услуги</button>
+      <button class='slideMenu__button'>Адреса сервисных центров</button>
+      <button class='slideMenu__button'>Специальные цены</button>
+      <button class='slideMenu__button'>Отзывы</button>
+    </div>
+
+    <div class='firstPart'>
+      <div class='textPiece'>
+        <div class='text'>
+    <span class='text__mob'>Мы являемся авторизованным сервисным
+      центром по ремонту техники Dell. Только у
+      нас вы можете отремонтировать свой ноутбук
+      Dell с официальной гарантией производителя.</span>
+          <span class='text__tab'>Мы успешно работаем с 1992 года и заслужили
+      репутацию надежного партнера</span>
+          <span class='text__desk'>Мы успешно работаем с 1992 года и заслужили
+      репутацию надежного партнера, что подтверждает большое количество
+      постоянных клиентов. Мы гордимся тем, что к
+      нам обращаются по рекомендациям и, в свою очередь,
+      советуют нас родным и близким.</span>
+        </div>
+
+        <div class='readMore'>
+          <button class='readMore__btn'>Читать далее</button>
+        </div>
+      </div>
+
+      <div class='photoContainer'>
+        <img src='../src/assets/img/photo.png' alt='photo' class='photo'>
+      </div>
+    </div>
+
+    <div class='title'>
+      <span class='title__tech'>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</span>
+    </div>
+
+    <div class='swiper'>
+
+      <div class='swiper-wrapper slider'>
+        <div class='swiper-slide'>
+          <div class='slider__brands lenovo'>
+            <img src='../src/assets/img/lenovo.png' alt='lenovo' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='slider__brands samsung'>
+            <img src='../src/assets/img/samsung.png' alt='samsung' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='slider__brands apple'>
+            <img src='../src/assets/img/apple.png' alt='appel' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='slider__brands viewsonic'>
+            <img src='../src/assets/img/viewsonic.png' alt='viewsonic' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='slider__brands bosch'>
+            <img src='../src/assets/img/bosch.png' alt='bosch' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='slider__brands hp'>
+            <img src='../src/assets/img/hp.png' alt='hp' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='slider__brands acer'>
+            <img src='../src/assets/img/acer.png' alt='acer' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+        <div class='swiper-slide'>
+          <div class='slider__brands sony'>
+            <img src='../src/assets/img/sony.png' alt='sony' class='brand-logo'>
+            <button class='brand-btn'></button>
+          </div>
+        </div>
+      </div>
+
+      <div class='swiper-pagination'></div>
+
+    </div>
+
+    <div class='desk-slider'>
+      <div class='slider__brands lenovo'>
+        <img src='../src/assets/img/lenovo.png' alt='lenovo' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+      <div class='slider__brands samsung'>
+        <img src='../src/assets/img/samsung.png' alt='samsung' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+      <div class='slider__brands apple'>
+        <img src='../src/assets/img/apple.png' alt='appel' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+      <div class='slider__brands viewsonic'>
+        <img src='../src/assets/img/viewsonic.png' alt='viewsonic' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+      <div class='slider__brands bosch'>
+        <img src='../src/assets/img/bosch.png' alt='bosch' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+      <div class='slider__brands hp'>
+        <img src='../src/assets/img/hp.png' alt='hp' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+      <div class='slider__brands acer'>
+        <img src='../src/assets/img/acer.png' alt='acer' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+      <div class='slider__brands sony'>
+        <img src='../src/assets/img/sony.png' alt='sony' class='brand-logo'>
+        <button class='brand-btn'></button>
+      </div>
+
+      <div class='readMore'>
+        <button class='readMore__btn'>Показать все</button>
+      </div>
+
+    </div>
+
+    <div class='title'>
+      <span class='title__tech'>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ ТЕХНИКИ</span>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

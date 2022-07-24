@@ -1,0 +1,32 @@
+.captionMobile {
+  font-size: 28px;
+  padding: 24px 16px;
+  font-weight: bold;
+  display: flex;
+  font-family: TTLakes-Bold, sans-serif;
+
+  &::before{
+    content: "";
+    background-color: #41F6D7;
+    height: 40px;
+    width: 3px;
+    border-radius: 2px;
+    transform: translate(-12px);
+  }
+}
+
+@media (min-width: 768px) {
+  .captionMobile {
+    padding: 24px 24px 32px 24px;
+
+    &::before {
+      transform: translate(-20px);
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .captionMobile {
+    display: none;
+  }
+}

@@ -1,0 +1,28 @@
+.title {
+  background:  linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  border-top: 1px solid #d9fff5;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  &__tech {
+    padding: 0 16px;
+    font-size: 16px;
+    color: #7E7E82;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    height: 56px;
+    &__tech {
+      padding: 0 24px;
+    }
+  }
+
+}@media (min-width: 1440px) {
+  .title {
+    &__tech {
+      padding: 0 32px;
+    }
+  }
+}

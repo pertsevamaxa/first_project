@@ -1,0 +1,106 @@
+.menu {
+  display: none
+}
+
+@media (min-width: 1440px) {
+
+  .menu {
+    width: 306px;
+    background-color: white;
+    display: block;
+    padding: 30px 22px 0 22px;
+    flex-shrink: 0;
+
+    &__top {
+      display: flex;
+      align-items: center;
+      height: 50px;
+    }
+
+    &__services {
+      list-style-type: none;
+      padding-top: 37px;
+      padding-left: 0;
+      margin: 0;
+      display: grid;
+      gap: 28px;
+
+      .servariable{
+        &:hover{
+          color: #7E7E82;
+        }
+        &.active {
+          &::before {
+            display: block;
+            content: "";
+            background-color: #41F6D7;
+            height: 28px;
+            width: 3px;
+            border-radius: 2px;
+            transform: translate(-21px, 25px);
+          }
+        }
+      }
+    }
+
+    &__button {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 0;
+      background: #ff3e79 no-repeat center;
+    }
+
+    .exit {
+      background-image: url('./assets/img/exit.svg');
+      display: none;
+    }
+
+    .search {
+      background-image: url('./assets/img/search.svg');
+      margin-left: auto;
+    }
+
+    .call {
+      background-image: url('./assets/img/call.svg');
+    }
+
+    .chat {
+      background-image: url('./assets/img/chat.svg');
+    }
+
+    .profile {
+      background-image: url('./assets/img/profile.svg');
+    }
+
+    &__connection {
+      display: grid;
+      padding-top: 240px;
+
+      .contacts {
+        display: flex;
+        gap: 16px;
+        padding-bottom: 16px;
+      }
+
+      .mail {
+        padding-bottom: 12px;
+        font-size: 16px;
+      }
+
+      .phone{
+        padding-bottom: 40px;
+        font-size: 24px;
+        font-family: TTLakes-Bold, sans-serif;
+      }
+
+      .lang{
+          &:hover{
+            color: #7E7E82;
+          }
+      }
+
+
+    }
+  }
+}

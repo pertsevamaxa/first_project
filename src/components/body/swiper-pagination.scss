@@ -1,0 +1,26 @@
+.swiper {
+  height: 140px;
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      height: 12px;
+      width: 12px;
+      background-color: #DDDDDD;
+
+      &:hover {
+        background-color: #B5B6BC;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper {
+    height: 264px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .swiper {
+    height: 282px;
+  }
+}

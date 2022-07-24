@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "TTLakes-Bold";
+  // адрес шрифта и тип
+  src: url("./assets/fonts/TTLakes-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "TTLakes-Medium";
+  // адрес шрифта и тип
+  src: url("./assets/fonts/TTLakes-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом)
+  font-family: "TTLakes-Regular";
+  // адрес шрифта и тип
+  src: url("./assets/fonts/TTLakes-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  background-color: #F8F8F8;
+  display: flex;
+  font-family: TTLakes-Regular, sans-serif;
+  padding-bottom: 150px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    //@media (min-width: 1440px) {
+    //  width: calc(100% - 320px);
+    //}
+
+    .main {
+    }
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  body {
+    .main {
+    }
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+  body {
+    .main {
+
+    }
+  }
+
+}
